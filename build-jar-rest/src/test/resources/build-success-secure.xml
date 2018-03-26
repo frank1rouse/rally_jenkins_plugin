@@ -1,0 +1,6 @@
+<Build>
+	<BuildDefinition ref="https://test1cluster/slm/webservice/1.21/builddefinition/74027057" type="BuildDefinition"/>
+  <Status>SUCCESS</Status>
+  <Duration>0.0</Duration>
+  <Number>1</Number>
+</Build>

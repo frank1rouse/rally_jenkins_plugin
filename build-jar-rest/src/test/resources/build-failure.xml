@@ -1,0 +1,1 @@
+<Build><BuildDefinition ref="http://localhost:7001/slm/webservice/1.21/builddefinition/5169" type="BuildDefinition"/><Status>FAILURE</Status><Duration>0.0</Duration><Message><![CDATA[Build for job I broke the build failed.]]></Message><Number><![CDATA[1]]></Number></Build>

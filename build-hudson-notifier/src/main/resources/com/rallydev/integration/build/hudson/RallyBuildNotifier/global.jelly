@@ -1,0 +1,37 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+    <f:section title="Rally Build Publisher">
+        <f:entry title="Rally Server" description="Specify a Rally server (e.g. rally1.rallydev.com)">
+            <f:textbox name="rally_build_notifier.rallyServer" value="${descriptor.rallyServer}"/>
+        </f:entry>
+        <f:entry title="Rally Username" description="Specify a Rally Username">
+            <f:textbox name="rally_build_notifier.username" value="${descriptor.username}"/>
+        </f:entry>
+        <f:entry title="Rally Password" description="Specify a Rally Password">
+            <input name="rally_build_notifier.password" type="password" value="${descriptor.password}"/>
+        </f:entry>
+        <f:entry title="Hudson Host" description="Specify the Host name and port you are running Hudson on (e.g. machinename:8080)">
+            <f:textbox name="rally_build_notifier.hudsonServer" value="${descriptor.hudsonServer}"/>
+        </f:entry>
+        <f:entry title="Hudson Context" description="Specify the Hudson context. The default is 'hudson' when you are running in a container such as Tomcat.">
+            <f:textbox name="rally_build_notifier.hudsonContext" value="${descriptor.hudsonContext}"/>
+        </f:entry>
+    </f:section>
+        
+    <f:section title="Rally Build Publisher Proxy Settings">
+
+            <f:advanced>
+                <f:entry title="Proxy Server" description="Specify the name of your proxy server">
+                    <f:textbox name="rally_build_notifier.proxyServer" value="${descriptor.proxyServer}"/>
+                </f:entry>
+                <f:entry title="Proxy Port" description="Specify the port number for your proxy server">
+                    <f:textbox name="rally_build_notifier.proxyPort" value="${descriptor.proxyPort}"/>
+                </f:entry>
+                <f:entry title="Proxy Username" description="Specify your proxy username (optional)">
+                    <f:textbox name="rally_build_notifier.proxyUsername" value="${descriptor.proxyUsername}"/>
+                </f:entry>
+                <f:entry title="Proxy Password" description="Specify your proxy password (optional)">
+                    <input name="rally_build_notifier.proxyPassword" type="password" value="${descriptor.proxyPassword}"/>
+                </f:entry>
+            </f:advanced>
+    </f:section>
+</j:jelly>

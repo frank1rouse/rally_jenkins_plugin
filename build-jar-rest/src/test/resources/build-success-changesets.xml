@@ -1,0 +1,1 @@
+<Build><BuildDefinition ref="http://localhost:7001/slm/webservice/1.21/builddefinition/5169" type="BuildDefinition"/><Status>SUCCESS</Status><Duration>0.0</Duration><Number><![CDATA[1]]></Number><Changesets><Ref>/changeset/1839135128</Ref><Ref>/changeset/1839135129</Ref></Changesets><Uri>http://localhost:9000/job/BuildConnectors/16/</Uri></Build>
